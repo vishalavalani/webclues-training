@@ -3,7 +3,7 @@ import * as library from './lib.js';
 import cricketScore, { calculateAverage as avg } from './cricket.js';
 
 console.log(calculateRuns(11, 22));
-console.log(calculateAverage(11, 22));
+console.log(calc(11, 22));
 
 console.log(person);
 
