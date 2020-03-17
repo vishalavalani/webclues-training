@@ -113,3 +113,36 @@ console.log("name.endsWith('V')", name.endsWith('V'));
 console.log("name.includes('i')", name.includes('i'));
 console.log("name.includes('Vish')", name.includes('Vish'));
 console.log('name.repeat(2)', name.repeat(2));
+
+const batsman = [
+  {
+    id: 1,
+    name: 'Steven Smith',
+    team: 'Australia',
+    rating: 911
+  },
+  {
+    id: 2,
+    name: 'Virat Kohli',
+    team: 'India',
+    rating: 886
+  },
+  {
+    id: 3,
+    name: 'Marnus Labuschagne',
+    team: 'Australia',
+    rating: 827
+  },
+  {
+    id: 4,
+    name: 'Kane Williamson',
+    team: 'New Zealand',
+    rating: 813
+  },
+  {
+    id: 5,
+    name: 'Babar Azam',
+    team: 'Pakistan',
+    rating: 800
+  }
+];
