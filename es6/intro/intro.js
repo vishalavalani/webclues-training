@@ -54,6 +54,22 @@ const trainees = [
     experience: 2,
     skills: ['iOS'],
     hobbies: ['Travelling', 'Programming']
+  },
+  {
+    id: 8,
+    name: 'Jayesh',
+    designation: 'iOS Developer',
+    experience: 5,
+    skills: ['iOS'],
+    hobbies: ['Cricket', 'Travelling', 'Programming']
+  },
+  {
+    id: 9,
+    name: 'Pankit',
+    designation: 'Tech Lead',
+    experience: 11,
+    skills: ['PHP', 'MVC Frameworks', 'Leadership'],
+    hobbies: ['Cricket']
   }
 ];
 
