@@ -73,3 +73,33 @@ const streetCarsPromise = fetch(
 );
 
 // Promise.all([postsPromiseNew,streetCarsPromise])
+
+async function getData() {
+  try {
+    const resp1 = await fetch(url);
+    console.log('resp1', resp1);
+
+    throw Error('Test');
+    const resp2 = await resp1.json();
+    console.log('resp2', resp2);
+  } catch (e) {
+    console.log('Error', e.message);
+  }
+}
+
+getData();
+
+const customPromise2 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('Yaay!');
+  }, 5000);
+});
+
+async function getData1() {
+  const resp11 = await customPromise2;
+  console.log('resp11', resp11);
+  const newStr = resp11 + 'Test';
+  console.log('newStr', newStr);
+}
+
+getData1();
