@@ -1,4 +1,4 @@
-import { person, calculateAverage, calculateRuns } from './lib.js';
+import { person, calculateAverage as calc, calculateRuns } from './lib.js';
 import * as library from './lib.js';
 import cricketScore from './cricket.js';
 
