@@ -34,7 +34,7 @@ const batsman = [
 const arrHtml = batsman
 
   .map((b, i) => {
-    return `<div><span>${i + 1}.</span> <span>${b.name}</span></div>`;
+    return `<div><span>\${}${i + 1}.</span> <span>${b.name}</span></div>`;
   })
   .join('');
 
@@ -45,7 +45,7 @@ const arrHtml1 = batsman
   })
   .join('');
 
-document.body.innerHTML = arrHtml1;
+document.body.innerHTML = arrHtml;
 
 //Some and Every
 const ages = [12, 14, 18, 20];
