@@ -3,7 +3,13 @@
   margin: 0 auto;
   padding: 20px;
 }
-
+.item {
+  background-color: lightgreen;
+  margin: 20px;
+}
+.name {
+  font-size: 25px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
