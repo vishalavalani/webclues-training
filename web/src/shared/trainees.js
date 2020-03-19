@@ -70,5 +70,13 @@ export const trainees = [
     experience: 11,
     skills: ['PHP', 'MVC Frameworks', 'Leadership'],
     hobbies: ['Cricket']
+  },
+  {
+    id: 10,
+    name: 'Mayur',
+    designation: 'Android Developer',
+    experience: 3,
+    skills: ['Android'],
+    hobbies: ['Cricket']
   }
 ];
