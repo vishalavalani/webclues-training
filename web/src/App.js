@@ -19,9 +19,7 @@ class App extends Component {
   // };
 
   componentDidMount() {
-    this.setState({
-      isLoading: true
-    });
+    this.setLoading();
     setTimeout(() => {
       const { flag } = this.state;
       if (flag) {
@@ -31,15 +29,38 @@ class App extends Component {
         };
         this.setState(obj, () => {
           console.log('callback');
+          this.setLoading(false);
         });
       }
-    }, 2000);
+    }, 200);
   }
+  setLoading = (loading = true) => {
+    this.setState({ isLoading: loading });
+  };
+  employeeDeleteHandler = id => {
+    console.log('employeeDeleteHandler called', id);
+    // this.setLoading();
+    setTimeout(() => {
+      const employees = this.state.employees.filter(d => d.id !== id);
+      this.setState(
+        {
+          employees
+        },
+        () => {
+          // this.setLoading(false);
+        }
+      );
+    }, 200);
+  };
   render() {
     const { employees, isLoading } = this.state;
     const loading = <Loader size="small" loading={isLoading} />;
     const traineeObj = employees.map((trainee, index) => (
-      <Trainee index={index} trainee={trainee} />
+      <Trainee
+        index={index}
+        trainee={trainee}
+        onDelete={this.employeeDeleteHandler}
+      />
     ));
     console.log('traineeObj', traineeObj);
     return <div className="App">{isLoading ? loading : traineeObj}</div>;
