@@ -7,6 +7,11 @@
   background-color: lightgreen;
   margin: 20px;
 }
+.itemDelete {
+  background-color: red;
+  color: white;
+  margin: 20px;
+}
 .name {
   font-size: 25px;
 }

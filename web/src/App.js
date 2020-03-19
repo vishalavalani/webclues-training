@@ -50,13 +50,14 @@ class App extends Component {
           // this.setLoading(false);
         }
       );
-    }, 200);
+    }, 2000);
   };
   render() {
     const { employees, isLoading } = this.state;
     const loading = <Loader size="small" loading={isLoading} />;
     const traineeObj = employees.map((trainee, index) => (
       <Trainee
+        key={trainee.id}
         index={index}
         trainee={trainee}
         onDelete={this.employeeDeleteHandler}
