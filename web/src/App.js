@@ -37,7 +37,7 @@ class App extends Component {
   }
   render() {
     const { employees, isLoading } = this.state;
-    const loading = <Loader size="small" />;
+    const loading = <Loader size="small" loading={isLoading} />;
     const traineeObj = employees.map((trainee, index) => (
       <Trainee index={index} trainee={trainee} />
     ));
