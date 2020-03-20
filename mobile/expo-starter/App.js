@@ -1,19 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native';
+import Trainees from './src/screens/Trainees/Trainees';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Welcome to React native training!</Text>
-    </View>
+    <SafeAreaView>
+      <Trainees />
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
-});
