@@ -1,10 +1,11 @@
 import React from 'react';
-import {View, Text} from 'react-native';
-
+import {View, Text, StyleSheet} from 'react-native';
+import AppStyles from './AppStyles';
 const App = () => {
+  const {container, text} = AppStyles;
   return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>Welcome to react native training!</Text>
+    <View style={container}>
+      <Text style={text}>Welcome to React Native training!</Text>
     </View>
   );
 };
